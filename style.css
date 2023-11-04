@@ -1,0 +1,927 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #414545;
+}
+
+.home {
+    height: 100vh;
+}
+
+.home h1 {
+    position: relative;
+    top: 8px;
+    margin-left: 1.2em;
+    margin-right: 4.4em;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    color: #03090f;
+}
+
+.home nav {
+    padding-bottom: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 900;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #0b0a0a;
+}
+
+.home nav ul {
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 13px;
+}
+
+nav ul li a {
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #0088ff;
+    display: block;
+    transition: 0.2s linear;
+}
+
+nav ul li a:hover {
+    color: #0088ff;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Bar */
+
+.home h2 {
+    color: #b1ff00;
+    position: relative;
+    top: 5em;
+    font-size: 100px;
+    margin-left: 35px;
+}
+
+.home h2 span {
+    color: aquamarine;
+}
+
+
+.home .image img {
+    padding: 10px;
+    position: relative;
+    top: -9.3em;
+    width: 84em;
+    height: 400px;
+}
+
+.home .two {
+    display: none;
+}
+
+.home button {
+    text-decoration: none;
+    letter-spacing: 2px;
+    background-color: chocolate;
+    position: relative;
+    top: -3em;
+    left: 77em;
+    padding: 0.90em 1.70em;
+    border-radius: 20px;
+    border: 0;
+    transition: 0.5s;
+}
+
+.home button:hover {
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+.home button a {
+    text-decoration: none;
+    color: #211f1f;
+}
+
+/* home */
+
+
+
+.about {
+    background-color: #3a4245;
+    margin-top: 90px;
+    padding-top: 30px;
+    height: 90vh;
+}
+
+.about h1 {
+    font-size: 3.6em;
+    font-family: mv boli;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    color: #2cf7ff;
+}
+
+.about p {
+    width: 50%;
+    color: white;
+    position: relative;
+    left: 11em;
+    top: -8em;
+    font-family: mv boli;
+    font-size: 55px;
+}
+
+.about img {
+    width: 520px;
+    position: relative;
+    top: -3.5em;
+    left: 1em;
+}
+
+/* About */
+
+
+
+
+.products {
+    padding: 90px 0;
+}
+
+
+.products .box {
+    width: 95%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+
+.products .box .card,
+.products .box .card-short {
+    width: 300px;
+    margin-right: -2em;
+    height: 460px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+
+
+.products .box .card:hover {
+    height: 35em;
+    transition: 0.4s;
+}
+
+.products .box .card-short:hover {
+    height: 39.5em;
+    transition: 0.4s;
+}
+
+
+.products .box .card .img img,
+.products .box .card-short .img img {
+    width: 0px;
+}
+
+
+.products .box .card:hover .img img {
+    transition: 0.4s;
+    height: 14vh;
+    width: 35%;
+    transition: 0.7s;
+}
+
+
+
+.products .box .card-short:hover .img img {
+    transition: 0s;
+    height: 14vh;
+    width: 35%;
+}
+
+
+.products .box .card .image,
+.products .box .card-short .image {
+    width: 300px;
+    height: 245px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+.products .box .card .image img,
+.products .box .card-short .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+
+.products .box .card .image:hover img {
+    transform: scale(1.3);
+}
+
+
+.products .box .card-short .image:hover img {
+    transform: scale(1.3);
+}
+
+
+.products .box .card h2,
+.products .box .card-short h2 {
+    margin-top: 10px;
+    margin-left: 3.2em;
+    color: #fffbfb;
+    font-weight: bold;
+}
+
+
+.products .box .card p,
+.products .box .card-short p {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+
+.products .box .card h3,
+.products .box .card-short h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 0 0 0 4.4em;
+    margin-left: 10px;
+    color: #f7f7f7;
+}
+
+.products .box .card .icon,
+.products .box .card-short .icon {
+    margin-left: 5em;
+    color: #f5f500;
+}
+
+/* Products */
+
+
+
+.review {
+    width: 100%;
+    margin-top: 2em;
+    padding-top: 2em;
+}
+
+
+.review h1 span {
+    color: aqua;
+}
+
+
+.review h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 4em;
+    font-family: mv boli;
+    margin-bottom: 80px;
+}
+
+.review .box {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.review .box .card {
+    width: 305px;
+    height: 690px;
+    margin: 0 4px;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.review .box .card .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+.review .box .card:hover .img {
+    transform: translateY(-80px)
+}
+
+
+.review .box .card .img img {
+    width: 160px;
+    height: 155px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #c4bbbb;
+    border-radius: 50%;
+}
+
+
+.review .box .card h2 {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    text-align: center;
+    color: white;
+    transition: 0.6s;
+}
+
+.review .box .card:hover h2 {
+    transform: translateY(-60px)
+}
+
+
+.review .box .card p {
+    font-size: 20px;
+}
+
+.review .box .card .icon {
+    margin-left: 4.7em;
+    color: #ffb500;
+    transition: 0.6s;
+}
+
+.review .box .card:hover .icon {
+    transform: translateY(-60px)
+}
+
+.review .box .card .social {
+    opacity: 0;
+    position: relative;
+    top: -2em;
+    margin-left: 6em;
+    transition: 0.9s;
+}
+
+.review .box .card:hover .social {
+    opacity: 1;
+    transform: translatey(-10px)
+}
+
+.review .box .card .social a {
+    color: black;
+}
+
+.review .box .card .social a:hover {
+    color: wheat;
+}
+
+.review .box .card .social i {
+    margin-right: 10px;
+}
+
+/* Reviews */
+
+
+.order {
+    background-color: #546d77;
+    width: 100%;
+    height: 100vh;
+    padding: 60px 0;
+}
+
+.order h1 {
+    text-align: center;
+    color: aqua;
+    font-size: 50px;
+    font-family: mv boli;
+}
+
+.order h1 span {
+    color: #efd300;
+}
+
+
+.order .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order img {
+    width: 28em;
+}
+
+
+.order .main form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px 15px;
+}
+
+
+.order .main form .input {
+    margin: 4px;
+}
+
+
+.order .main form p {
+    color: white;
+    margin-left: 1em;
+}
+
+
+.order .main form .input input {
+    background-color: #8cff06;
+    height: 2.5em;
+    margin: 10px;
+    margin-left: 10px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+
+.order .main form .input input:focus {
+    border: 2px solid black;
+}
+
+
+.order .main form .btn a {
+    color: black;
+    width: 40%;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: chocolate;
+    padding: 0.8em 1em;
+    border-radius: 5px;
+    border: 0;
+    position: relative;
+    top: 40px;
+    left: 205px;
+    transition: 0.5s;
+}
+
+.order .main form a:hover {
+    transform: scale(1.1)
+}
+
+/* Order */
+
+
+
+.contact {
+    background-color: #eeeeee;
+    width: 100%;
+    padding: 10px 0 20px 0px;
+}
+
+.contact .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact .main .tag {
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact .main .tag h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.contact .main .tag p {
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.contact .main .tag a i {
+    color: black;
+    letter-spacing: 5px;
+}
+
+.contact .main .tag a i:hover {
+    color: #aca22d;
+}
+
+/* Footer */
+
+
+
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #97ff0a;
+    border-radius: 20px;
+}
+
+
+/* Mobiles */
+
+@media screen and (max-width: 575px) {
+
+    .home {
+        width: 100%;
+        height: 77vh;
+    }
+
+    .home h1 {
+        display: none;
+    }
+
+    .home nav {
+        background-color: gray;
+    }
+
+    .home nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .home nav ul li a {
+        top: 25px;
+        right: -0.2em;
+        font-size: 17px;
+    }
+
+    .home h2 {
+        font-size: 48px;
+        left: -30px;
+        top: 9em;
+    }
+
+    .home .two {
+        display: block;
+        position: relative;
+    }
+
+    .home .two img {
+        width: 100%;
+        height: 40vh;
+        position: relative;
+        top: -42px;
+    }
+
+    .home .image img {
+        display: none;
+    }
+
+    .home button {
+        display: none;
+    }
+
+
+    .about h1 {
+        top: -25px;
+    }
+
+    .about img {
+        top: -20px;
+        width: 70%;
+        left: 70px;
+    }
+
+    .about p {
+        color: #f4f4f4;
+        font-size: 35px;
+        width: 7em;
+        top: 1px;
+        left: 4.5em;
+    }
+
+
+    .products .box {
+        display: block;
+        margin-left: 35px;
+    }
+
+    .products .box .card-short:hover .img img {
+        height: 8vh;
+    }
+
+    .products .box .card:hover .img img {
+        height: 12vh;
+    }
+
+    .review h1 {
+        width: 1%;
+        margin-left: 15px;
+    }
+
+    .review h1 mark {
+        margin-left: 60px;
+    }
+
+    .review .box {
+        display: block;
+        padding-bottom: 20px;
+        margin-left: 30px;
+    }
+
+
+    .order {
+        width: 123%;
+        height: 140vh;
+    }
+    
+    .order h1{
+        position: relative;
+        left: -35px;
+    }
+
+    .order .main {
+        display: block;
+    }
+
+    .order .main img {
+        position: relative;
+        width: 80%;
+    }
+
+    .order .main form {
+        display: block;
+        position: relative;
+        left: 3.5em;
+    }
+
+
+    .order .main .btn {
+        padding: 2px;
+        margin-left: -7.5em;
+        margin-top: -10px;
+    }
+
+    .contact .main {
+        display: block;
+        position: relative;
+        left: 6.5em;
+    }
+}
+
+/* microsoft surface duo */
+
+@media screen and (min-height: 660px) and (max-width: 2700px) {
+
+    .home nav h1 {
+        left: 10px;
+    }
+
+    .home nav ul {
+        margin-right: 0.2em;
+    }
+
+    .home nav ul li {
+        margin-right: 21px;
+    }
+
+    .home .image img {
+        width: 100%;
+    }
+
+    .home button {
+        left: 70em;
+    }
+    .about p {
+        margin-left: -40px;
+    }
+
+    .products .box {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .review .box {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contact .tag {
+        padding-right: 60%;
+    }
+}
+
+
+
+/* ipads and tablets */
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+
+    body {
+        width: 99%;
+    }
+    
+    .order , .home , .about , .contact{
+        width: 130%;
+    }
+
+    .home {
+        height: 80vh;
+    }
+
+    .home h1 {
+        display: none;
+    }
+
+    .home nav ul li{
+        margin-left: 27px;
+    }
+
+    .home .image {
+        display: none;
+    }
+
+    .home .two {
+        display: block;
+    }
+
+    .home .two img {
+        width: 100%;
+        height: 20vh;
+        position: relative;
+        top: -24em;
+    }
+
+    .home h2{
+        width: 5em;
+     top: 3em;    
+    }
+    
+    .home button {
+        display: none;
+    }
+
+    .about {
+        height: 130vh;
+    }
+
+    .about h1 {
+        margin-top: 20px;
+        left: -2em;
+    }
+
+    .about img {
+         left: 90px;
+        top: 20px;
+    }
+
+    .about p {
+        width: 70%;
+        top: 70px;
+        left: 1em;
+    }
+
+    .products .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 70px;
+    }
+
+    .products .box .card {
+        margin-left: 0px;
+    }
+
+    .products .box .card:hover {
+        height: 65vh
+    }
+
+    .products .box .card-short:hover .img img {
+        height: 10vh;
+    }
+
+    .products .box .card-short:hover {
+        height: 70vh;
+    }
+
+    .review .box {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0px;
+    }
+
+    .order{
+        margin-top: 20px;
+        height: 110vh;
+    }
+    
+    .order h1{
+        position: relative;
+        right: 80px;
+    }
+
+    .order .main {
+        display: block;
+    }
+
+    .order .main img {
+        position: relative;
+        left: 9em;
+    }
+
+    .order .main form {
+        margin: 0 23em;
+        margin-left: 99px
+    }
+    
+    .contact .main {
+        width: 680px;
+        margin-left: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) and (max-height: 601px){
+    .home{
+   height: 100vh;
+  }
+    .home h2 {
+        top: 4em;
+        width: 70%;
+    }
+    
+    .home .image{
+        display: none;
+    }
+    .home .two img{
+        top: -149px;
+         height: 40vh;
+     }
+    
+    .about{
+        height: 170vh
+    }
+    
+    .about h1{
+        left: -2.9em;
+    }
+    
+    .about img{
+        left: 15em;
+    }
+    
+    .products .box{
+        margin: 0 30px;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+    .review .box{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+ 
+    .order{
+        height: 160vh;
+    }
+    
+    .order h1{
+        left: -3em;
+    }
+    
+    
+    .order .main img{
+        position: relative;
+        left: 15em;
+    }
+    
+    .order .main form{
+        margin: 0 22em;
+        position: relative;
+        left: -9em;
+    }
+    
+    .contact .tag{
+      margin-left: 6.5em;
+    }
+}
