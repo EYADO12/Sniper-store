@@ -756,7 +756,8 @@ nav ul li a:hover::after {
     }
 
     .home nav ul li{
-        margin-left: 27px;
+        font-size: 23px;
+        margin-left: 29px;
     }
 
     .home .image {
