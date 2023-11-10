@@ -575,7 +575,7 @@ nav ul li a:hover::after {
 
     .home nav ul li a {
         top: 25px;
-        right: -2em;
+        right: 1em;
         font-size: 17px;
     }
 
