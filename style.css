@@ -575,7 +575,7 @@ nav ul li a:hover::after {
 
     .home nav ul li a {
         top: 25px;
-        right: -0.2em;
+        right: -2em;
         font-size: 17px;
     }
 
@@ -656,7 +656,7 @@ nav ul li a:hover::after {
 
     .order {
         width: 123%;
-        height: 140vh;
+        height: 150vh;
     }
     
     .order h1{
